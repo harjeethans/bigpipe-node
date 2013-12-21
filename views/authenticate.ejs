@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="themes/bootstrap/login.css">
+    <script type="text/javascript" src="javascripts/libs/jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/libs/bootstrap/js/bootstrap.js"></script>
+    <!--<script type="text/javascript" src="javascripts/libs/misc/modernizr.js"></script>-->
+    <script type="text/javascript">
+        jQuery.ready(function(){
+            if(jQuery('input')[0].placeholder) {
+                //jQuery('input').removeClass('hidden');
+            }
+        });
+
+    </script>
+</head>
+<body>
+<div id="login-container">
+    <%- include login %>
+</div>
+<iframe id="xhr-iframe" class="hidden" name="xhr-iframe" title="xhr-iframe"></iframe>
+</body>
+</html>
